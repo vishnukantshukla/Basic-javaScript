@@ -38,3 +38,25 @@ const myFunction=function(){
 }
 
 console.log(typeof bigNumber)
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack Memory (Primitive)(yeh value ki copy deta hai actual value me change nhi hota hai) , Heap Memory(Non- Primitive)(yeh call by refrence hota hai jo uss location ki value ko modify kar deta hai)
+
+let myYoutubename="vishnukantshukla";
+
+
+let anothername=myYoutubename;
+
+console.log(anothername);  // yesme copy jati hai
+
+let UserOne={
+    email:"vishnu@gmail.com",
+    upi:"user@ybl",
+}
+
+let UserTwo=UserOne;
+UserTwo.email="Vishnukant@gmail.com";
+
+console.log(UserOne.email);
